@@ -1,0 +1,9 @@
+# инициализация БД
+export FLASK_APP=app.py
+flask db init
+flask db migrate -m "init"
+flask db upgrade
+
+# запуск
+python app.py
+# Откройте http://127.0.0.1:5000
